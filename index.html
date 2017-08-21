@@ -14,15 +14,23 @@
 	</div>
 
 	<div id="main">
-		<input id="url" placeholder="URL"><br>
-		<input id="login" placeholder="login"><br>
-		<input id="master" placeholder="masterpass" type="password"><br>
+		<input class="form-control center" id="url" placeholder="URL">
+		<input class="form-control center" id="login" placeholder="login">
+		<input class="form-control center" id="master" placeholder="masterpass" type="password">
 		<br>
-		<button id="genbtn" class="btn btn-primary">Generate</button>
+		<button id="genbtn" class="btn btn-primary">Generate Password</button>
 		<br><br>
-		<input id="pass" readonly>
-		<button id="copy" data-clipboard-target="#pass">copy</button>
+		<div class="center">
+			<div class="input-group">
+            	<input class="form-control" id="pass" readonly>
+            	<span class="input-group-btn">
+            		<button id="copy" class="btn btn-default" data-clipboard-target="#pass">copy</button> 
+            	</span>
+        	</div>
+		</div>		
 	</div>
+
+	<p></p>
 
 	<script src="js/clipboard.js"></script>
 	<script src="js/words.js"></script>

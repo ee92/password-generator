@@ -20,8 +20,10 @@ body {
 	padding: 20px;
 }
 
-input {
-	width: auto;
+.center {
+	min-width: 240px;
+	max-width: 40%;
+	margin: 0 auto;
 }
 
 @media(max-width: 500px){
